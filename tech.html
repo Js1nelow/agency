@@ -332,6 +332,40 @@
         cursor: pointer;
         transition: 0.3s;
     }
+
+    /* Мобильная адаптация модалок */
+    @media (max-width: 768px) {
+        .legal-modal {
+            width: 94%;
+            max-width: 480px;
+            max-height: 90vh;
+            border-radius: 20px;
+        }
+        .legal-header {
+            padding: 20px 18px 10px;
+            gap: 12px;
+        }
+        .legal-header h2 {
+            font-size: 1.25rem;
+        }
+        .close-legal-modal {
+            font-size: 28px;
+            min-width: 44px;
+            min-height: 44px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .legal-body {
+            padding: 0 18px 20px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .legal-body h3 {
+            margin: 18px 0 10px;
+            font-size: 1rem;
+        }
+    }
 </style>
 
 <!-- МОДАЛКА 1: ПУБЛИЧНАЯ ОФЕРТА -->
