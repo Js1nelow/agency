@@ -107,7 +107,10 @@
             /* Таблица на мобилке как отдельные карточки */
             .comparison-container { max-width: 480px; margin: 0 auto; }
             .comp-grid { display: flex; flex-direction: column; gap: 28px; }
-            .comp-header { display: none; }
+            .comp-header,
+            .comp-row.comp-header {
+                display: none !important;
+            }
             .comp-row { display: flex; flex-direction: column; gap: 10px; }
             .comp-row + .comp-row { margin-top: 6px; }
             .comp-cell {
