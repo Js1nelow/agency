@@ -6,6 +6,33 @@
     <title>Технологии | AVERSKIY AGENCY</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .tech-hero {
+            text-align: center;
+            margin-bottom: 90px;
+        }
+
+        .tech-title {
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            line-height: 1.05;
+            margin: 0 0 18px;
+            font-size: clamp(2.2rem, 7.2vw, 4rem);
+        }
+
+        .tech-sub {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: clamp(1rem, 3.8vw, 1.2rem);
+            line-height: 1.6;
+        }
+
+        @media (max-width: 600px) {
+            .tech-hero { margin-bottom: 60px; }
+            .tech-title { letter-spacing: -1.2px; }
+        }
+    </style>
 </head>
 <body>
 
@@ -32,9 +59,9 @@
 
     <main class="fade-in mt-100">
         <!-- HERO SECTION -->
-        <div class="pricing-header" style="text-align: center; margin-bottom: 100px;">
-            <h1 style="font-size: 4rem; font-weight: 900; text-transform: uppercase; letter-spacing: -2px; margin-bottom: 25px;">Наш движок:<br>Искусство + Математика</h1>
-            <p class="muted-text" style="max-width: 800px; margin: 0 auto; font-size: 1.2rem; line-height: 1.6;">
+        <div class="pricing-header tech-hero">
+            <h1 class="tech-title">Наш движок:<br>Искусство&nbsp;+&nbsp;Математика</h1>
+            <p class="muted-text tech-sub">
                 Мы не просто пишем промпты. Мы используем профессиональный B2B-стек пайплайнов для абсолютного контроля над каждым пикселем, светом и фактурой ткани.
             </p>
         </div>
