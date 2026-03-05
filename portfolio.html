@@ -24,33 +24,34 @@
         <nav class="main-nav" id="main-nav">
             <a href="portfolio.html" class="active">КЕЙСЫ</a>
             <a href="pricing.html">УСЛУГИ</a>
+            <a href="tech.html">ТЕХНОЛОГИИ</a>
             <a href="https://t.me/andrewaverskiy" target="_blank">КОНТАКТЫ</a>
         </nav>
     </header>
 
-    <section class="fade-in mt-100">
+    <section class="mt-100">
         <h2 class="section-title text-center">Мои работы</h2>
         
-        <div class="glass-panel fade-in text-center" style="max-width: 700px; margin: 0 auto 50px auto; padding: 20px 30px; border-radius: 20px;">
+        <div class="glass-panel text-center" style="max-width: 700px; margin: 0 auto 50px auto; padding: 20px 30px; border-radius: 20px;">
             <p class="muted-text">Примеры генеративного визуала: фэшн-кампейны, предметная съемка, видео-рилсы.</p>
         </div>
         
         <div class="portfolio-grid">
-            <div class="portfolio-item fade-in"><img src="img/1.jpg" alt="AI Работа 1"></div>
-            <div class="portfolio-item fade-in"><img src="img/2.jpg" alt="AI Работа 2"></div>
-            <div class="portfolio-item fade-in"><img src="img/3.jpg" alt="AI Работа 3"></div>
-            <div class="portfolio-item fade-in"><img src="img/4.jpg" alt="AI Работа 4"></div>
-            <div class="portfolio-item fade-in"><img src="img/5.jpg" alt="AI Работа 5"></div>
-            <div class="portfolio-item fade-in"><img src="img/6.jpg" alt="AI Работа 6"></div>
-            <div class="portfolio-item fade-in"><img src="img/7.jpg" alt="AI Работа 7"></div>
-            <div class="portfolio-item fade-in"><img src="img/8.jpg" alt="AI Работа 8"></div>
-            <div class="portfolio-item fade-in"><img src="img/9.jpg" alt="AI Работа 9"></div>
-            <div class="portfolio-item fade-in"><img src="img/10.jpg" alt="AI Работа 10"></div>
-            <div class="portfolio-item fade-in"><img src="img/11.jpg" alt="AI Работа 11"></div>
-            <div class="portfolio-item fade-in"><img src="img/12.jpg" alt="AI Работа 12"></div>
-            <div class="portfolio-item fade-in"><img src="img/13.jpg" alt="AI Работа 13"></div>
-            <div class="portfolio-item fade-in"><img src="img/14.jpg" alt="AI Работа 14"></div>
-            <div class="portfolio-item fade-in"><img src="img/15.jpg" alt="AI Работа 15"></div>
+            <div class="portfolio-item"><img src="img/1.jpg" alt="AI Работа 1"></div>
+            <div class="portfolio-item"><img src="img/2.jpg" alt="AI Работа 2"></div>
+            <div class="portfolio-item"><img src="img/3.jpg" alt="AI Работа 3"></div>
+            <div class="portfolio-item"><img src="img/4.jpg" alt="AI Работа 4"></div>
+            <div class="portfolio-item"><img src="img/5.jpg" alt="AI Работа 5"></div>
+            <div class="portfolio-item"><img src="img/6.jpg" alt="AI Работа 6"></div>
+            <div class="portfolio-item"><img src="img/7.jpg" alt="AI Работа 7"></div>
+            <div class="portfolio-item"><img src="img/8.jpg" alt="AI Работа 8"></div>
+            <div class="portfolio-item"><img src="img/9.jpg" alt="AI Работа 9"></div>
+            <div class="portfolio-item"><img src="img/10.jpg" alt="AI Работа 10"></div>
+            <div class="portfolio-item"><img src="img/11.jpg" alt="AI Работа 11"></div>
+            <div class="portfolio-item"><img src="img/12.jpg" alt="AI Работа 12"></div>
+            <div class="portfolio-item"><img src="img/13.jpg" alt="AI Работа 13"></div>
+            <div class="portfolio-item"><img src="img/14.jpg" alt="AI Работа 14"></div>
+            <div class="portfolio-item"><img src="img/15.jpg" alt="AI Работа 15"></div>
         </div>
     </section>
 
@@ -61,7 +62,7 @@
     </div>
 
 <!-- ФУТЕР ИЗ СКРИНШОТА -->
-    <footer id="contact" class="glass-panel fade-in mt-100">
+    <footer id="contact" class="glass-panel mt-100">
         <h2>Обсудим ваш проект?</h2>
         <p class="desc">Свяжитесь со мной напрямую для получения персонального технологического решения.</p>
         <div class="socials">
@@ -81,18 +82,9 @@
         </div>
     </div>
 
+    <!-- Скрипт Лайтбокса (открытие картинок/видео) -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.15 });
-            document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
             const portfolioItems = document.querySelectorAll('.portfolio-item img, .portfolio-item video');
             const lightbox = document.getElementById('lightbox');
             const lightboxImg = document.getElementById('lightbox-img');
@@ -127,6 +119,7 @@
         });
     </script>
 
+    <!-- Плавающая кнопка контактов -->
     <div class="floating-btn" id="contactBtn">
         <svg viewBox="0 0 24 24" width="28" height="28" fill="#111"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 9H6V9h12v2zm0-3H6V6h12v2z"/></svg>
     </div>
@@ -146,6 +139,7 @@
         </div>
     </div>
 
+<!-- Скрипт кнопок, модалок и меню -->
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         const contactBtn = document.getElementById('contactBtn');
